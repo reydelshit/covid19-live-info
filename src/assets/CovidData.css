@@ -1,0 +1,48 @@
+
+.continents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.covidData__main__container{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.continent__holder{
+    display: flex;
+}
+
+.covidData__container{
+
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #22272e;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.countryButton{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 80px;
+    top: 0;
+}
+
+.countryButton button{
+
+    padding: 1em;
+    border: 1px solid #22272e;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 1em;
+
+}

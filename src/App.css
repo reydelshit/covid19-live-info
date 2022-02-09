@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  color: aqua;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+  background-attachment: fixed;
+  background-image: url('./assets/images/covid-bg-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  /* source : https://dribbble.com/shots/14557354-Dimensions-of-the-COVID-19-Crisis/attachments/6246363?mode=media */
+  /* source: https://dribbble.com/shots/11163313-Be-Negative */
+}
+
+.App{
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+
+}
+
+main{
+  width: 100%;
+  position: relative;
+}

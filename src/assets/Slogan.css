@@ -1,0 +1,20 @@
+.main__slogan{
+    
+    margin-top: 5rem;
+    width: 55rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main__slogan .slogan__title{
+    font-size: 3rem;
+    color: aqua;
+    font-weight: 600;
+}
+
+/* .main__slogan p{
+    width: 50%;
+    font-size: 1rem;
+} */

@@ -1,0 +1,15 @@
+.worldwide__main__container{
+
+    position: absolute;
+    left: 80px;
+    top: 0;
+
+}
+
+.worldwide__container{
+
+    text-align: center;
+    background: #22272e;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
