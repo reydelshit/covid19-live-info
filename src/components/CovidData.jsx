@@ -1,22 +1,9 @@
-// import NorthAmerica from "./Continents/NorthAmerica";
-// import Asia from "./Continents/Asia"
-// import SouthAmerica from "./Continents/SouthAmerica"
-// import Europe from "./Continents/Europe"
-// import Africa from "./Continents/Africa"
-// import Australia from "./Continents/AustraliaOceana"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import '../assets/CovidData.css'
 
 
 const MainData = ({covidData}) => {
-    
-  // const [showNorthAmerica, setNorthAmerica] = useState(false)
-  // const [showAsia, setAsia] = useState(false)
-  // const [showSouthAmerica, setSouthAmerica] = useState(false)
-  // const [showEurope, setEurope] = useState(false)
-  // const [showAfrica, setAfrica] = useState(false)
-  // const [showAustralia, setAustrali] = useState(false)
     
   const convertNumbers = (number) => {
     const num = number.toLocaleString("en-US");
@@ -85,12 +72,12 @@ const MainData = ({covidData}) => {
       </div>
     }
     <div className="countryButton">
-          <button onClick={() => changeIndex(0)}>change north</button>
-          <button onClick={() => changeIndex(1)}>change asia</button>
-          <button onClick={() => changeIndex(2)}>change south</button>
-          <button onClick={() => changeIndex(3)}>change europe</button>
-          <button onClick={() => changeIndex(4)}>change africa</button>
-          <button onClick={() => changeIndex(5)}>change asturalia</button>
+          <button onClick={() => changeIndex(0)}>North America</button>
+          <button onClick={() => changeIndex(1)}>Asia</button>
+          <button onClick={() => changeIndex(2)}>South America</button>
+          <button onClick={() => changeIndex(3)}>Europe</button>
+          <button onClick={() => changeIndex(4)}>Africa</button>
+          <button onClick={() => changeIndex(5)}>Australia Oceania</button>
       </div>
     </div>
   );

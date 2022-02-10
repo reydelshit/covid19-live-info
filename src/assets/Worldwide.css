@@ -1,8 +1,9 @@
 .worldwide__main__container{
-
+    
     position: absolute;
-    left: 80px;
+    left: 70px;
     top: 0;
+    font-size: 0.8rem;
 
 }
 
