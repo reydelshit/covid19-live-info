@@ -11,7 +11,7 @@ function Header() {
             <li>Symptoms</li>
         </ul>
         <div>
-          <h1>dark mode</h1>
+          <h1>dark</h1>
         </div>
     </header>
 

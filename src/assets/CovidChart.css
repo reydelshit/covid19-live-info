@@ -1,22 +1,17 @@
 .covid__Chart{
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     margin-top: 2rem;
-    /* text-align: center; */
-    align-items: center;
 }
 
-.bg{
-    width: 50rem;
-    border-radius: 4px;
-    background-color: #22272e;
+.covid__Chart h1{
+    
+    font-size: 2rem;
 }
 
 .chart__Container{
-    position: relative;
-    margin: auto;
-    height: 40vh;
-    width: 55vw;
+
+    background: #22272e;
+    margin-left: -1rem;
+    padding: 1em;
+    width: 50rem;
+
 }

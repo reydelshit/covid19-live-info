@@ -1,16 +1,14 @@
-.worldwide__main__container{
-    
-    position: absolute;
-    left: 70px;
-    top: 0;
-    font-size: 0.8rem;
-
-}
-
 .worldwide__container{
 
     text-align: center;
-    background: #22272e;
+    width: 10rem;
+    padding: 0.8em;
+
+    background: #393d42;
     border-radius: 5px;
     margin-bottom: 1rem;
+}
+
+.worldwide__container h1{
+    font-size: 0.5rem;
 }

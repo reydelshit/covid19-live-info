@@ -5,15 +5,23 @@
   margin: 0;
   color: aqua;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h1{
+  font-size: 1rem;
 }
 
 body{
-
+/* 
   background-attachment: fixed;
   background-image: url('./assets/images/covid-bg-3.jpg');
   background-size: cover;
+  object-fit: fill;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  overflow-x: hidden; */
+
+  background: #22272e;
   width: 100vw;
   height: 100vh;
 
@@ -31,7 +39,20 @@ body{
 
 }
 
-main{
+.head__title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 100%;
-  position: relative;
+  text-align: center;
+}
+
+
+.main__body{
+  /* border: 1px solid yellow; */
+  margin-top: 3rem;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
 }

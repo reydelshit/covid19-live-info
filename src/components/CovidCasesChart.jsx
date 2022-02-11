@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "../assets/CovidChart.css"
 
+
 import { Line } from 'react-chartjs-2'
 import {
     Chart as ChartJS,
@@ -45,8 +46,8 @@ const CovidCasesChart = ({historicalCases}) => {
       {
         label: 'Cases',
         data: historicalCases,
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        borderColor: 'aqua',
+        backgroundColor: '#393d42',
       }
     ],
   };
@@ -54,19 +55,39 @@ const CovidCasesChart = ({historicalCases}) => {
   
   const options = {
     responsive: true,
-    // outerWidth: '400px'
     innerWidth: '400px',
     plugins: {
       legend: {
         position: 'top',
+        labels: {
+          color: 'aqua'
+        }
       },
       title: {
         display: true,
         text: 'LIVE COVID CASES WORLDWIDE',
+        color: 'aqua'
       },
     },
+    scales: {
+      y: {
+        ticks: {
+          color: 'rgb(14, 192, 192)'
+        },
+        grid: {
+          color: '#393d42'
+        }
+      },
+      x: {
+        ticks: {
+          color: 'rgb(14, 192, 192)'
+        },
+        grid: {
+          color: '#393d42'
+        }
+      },
+    }
   };
-
 
 
   return (

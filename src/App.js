@@ -3,10 +3,9 @@ import './App.css';
 
 import Header from './components/Header'
 import CovidData from './components/CovidData';
-import Slogan from './components/Slogan';
 
 import WorldWide from './components/WorldWide';
-import CovidCasesChart from './components/CovidCasesChart';
+import ContinentsButton from './components/ContinentsButton';
 
 function App() {
 
@@ -49,17 +48,26 @@ function App() {
     setHistoricalCases(updatedCases)
   }
 
+  
+  const [index, setIndex] = useState([])
+
+  const changeIndex = (id) => {
+    data.map((wow) => {
+      setIndex([wow[id]])
+    })
+  }
 
 
   
   return ( 
     <div className="App">
-      <Header />
-      <Slogan />
-      <main>
-        <CovidData covidData={data}/>
-        <CovidCasesChart historicalDeaths={historicalDeaths} historicalCases={historicalCases}/>
+      <div className='head__title'>
+        <Header />
+      </div>
+      <main className='main__body'>
         <WorldWide />
+        <CovidData historicalDeaths={historicalDeaths} historicalCases={historicalCases} covidData={data} index={index}/>
+        <ContinentsButton changeIndex={changeIndex}/>
       </main>
     </div>
   );

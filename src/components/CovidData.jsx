@@ -1,28 +1,17 @@
-import { useState } from "react";
-
+import CovidCasesChart from "./CovidCasesChart";
 import '../assets/CovidData.css'
 
 
-const MainData = ({covidData}) => {
+const MainData = ({covidData, historicalDeaths, historicalCases, index}) => {
     
   const convertNumbers = (number) => {
     const num = number.toLocaleString("en-US");
     return num
   }
 
-  
-
-  const [index, setIndex] = useState([])
-
-  const changeIndex = (id) => {
-    covidData.map((wow) => {
-      setIndex([wow[id]])
-    })
-  }
-  
 
   return(
-    <div>
+    <div className="covid__data__main__container">
       {index.length ? <div className="continents">
     {index.map((continents, index) => (
         <div className='covidData__main__container' key={index}> 
@@ -71,14 +60,8 @@ const MainData = ({covidData}) => {
       ))}
       </div>
     }
-    <div className="countryButton">
-          <button onClick={() => changeIndex(0)}>North America</button>
-          <button onClick={() => changeIndex(1)}>Asia</button>
-          <button onClick={() => changeIndex(2)}>South America</button>
-          <button onClick={() => changeIndex(3)}>Europe</button>
-          <button onClick={() => changeIndex(4)}>Africa</button>
-          <button onClick={() => changeIndex(5)}>Australia Oceania</button>
-      </div>
+      <CovidCasesChart historicalDeaths={historicalDeaths} historicalCases={historicalCases}/>
+
     </div>
   );
 };
