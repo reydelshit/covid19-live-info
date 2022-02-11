@@ -27,15 +27,15 @@ const WorldWide = () => {
         {worldwide.map((world, index) => 
         <div key={index}>
             <div className='worldwide__container'>
-                <h1>Total Cases</h1>
+                <span>Total Cases</span>
                 <span>{convertNumbers(world.cases)}</span>
             </div>
             <div className='worldwide__container'>
-                <h1>Recovered</h1>
+                <span>Recovered</span>
                 <span>{convertNumbers(world.recovered)}</span>
             </div>
             <div className='worldwide__container'>
-                <h1>Deaths</h1>
+                <span>Deaths</span>
                 <span>{convertNumbers(world.deaths)}</span>
             </div>
         </div>)}

@@ -55,4 +55,21 @@ body{
   justify-content: space-around;
   align-items: center;
   display: flex;
+
+}
+
+
+@media screen and (max-width: 1172px) {
+
+  .main__body{
+    flex-direction: column;
+  }
+  .main__body > :nth-child(1){
+    order: 1;
+  }
+
+  /* .main__body > :nth-child(3){
+    order: 1;
+  } */
+
 }

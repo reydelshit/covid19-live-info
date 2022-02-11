@@ -14,7 +14,9 @@ ul li {
     list-style-type: none;
     cursor: pointer;
 }
-
+ul li a{
+    text-decoration: none;
+}
 ul li:hover{
     color: azure;
 }

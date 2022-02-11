@@ -1,14 +1,17 @@
+.worldwide__main__container h1{
+    font-size: 2rem;
+    padding-bottom: 1em;
+}
+
 .worldwide__container{
 
+    width: 15rem;
     text-align: center;
-    width: 10rem;
-    padding: 0.8em;
-
-    background: #393d42;
     border-radius: 5px;
+    background-color: #393d42;
     margin-bottom: 1rem;
 }
 
-.worldwide__container h1{
-    font-size: 0.5rem;
+.worldwide__container span{
+    display: block;
 }

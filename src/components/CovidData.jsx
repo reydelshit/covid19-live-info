@@ -2,7 +2,7 @@ import CovidCasesChart from "./CovidCasesChart";
 import '../assets/CovidData.css'
 
 
-const MainData = ({covidData, historicalDeaths, historicalCases, index}) => {
+const MainData = ({covidData, historicalCases, index}) => {
     
   const convertNumbers = (number) => {
     const num = number.toLocaleString("en-US");
@@ -60,7 +60,7 @@ const MainData = ({covidData, historicalDeaths, historicalCases, index}) => {
       ))}
       </div>
     }
-      <CovidCasesChart historicalDeaths={historicalDeaths} historicalCases={historicalCases}/>
+      <CovidCasesChart historicalCases={historicalCases}/>
 
     </div>
   );
