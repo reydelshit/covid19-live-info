@@ -1,0 +1,10 @@
+.countrySearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.countrySearch a{
+    display: inline-block;
+}

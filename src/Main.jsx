@@ -1,15 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-
-import Header from './components/Header'
 import CovidData from './components/CovidData';
-
 import WorldWide from './components/WorldWide';
 import ContinentsButton from './components/ContinentsButton';
-
-import { Outlet } from 'react-router-dom';
-
-
 
 
 function Main() {
@@ -18,7 +11,6 @@ function Main() {
   const [historicalCases, setHistoricalCases] = useState([])
 
   useEffect(() => {
-    
       const fetchCovid = async () => {
         const fetchData = await fetch('https://disease.sh/v3/covid-19/continents')
         const getData = await fetchData.json()
@@ -65,14 +57,15 @@ function Main() {
   
   return ( 
     <div className="App">
-        <main className='main__body'>
+      <main className='main__body'>
           <WorldWide />
            <CovidData historicalCases={historicalCases} covidData={data} index={index}/>
            <ContinentsButton changeIndex={changeIndex}/>
-        </main>
+      </main>
   </div>
 
   );
 }
+
 
 export default Main;

@@ -9,13 +9,9 @@ function Header() {
        <Link to="/">homee</Link>  
       <ul>
           <li>
-            <Link to="/dummy">home</Link>  
-          </li>
-          <li>
             <Link to="/countries">country</Link>
           </li>
       </ul>
-
         <div>
           <h1>dark</h1>
         </div>
