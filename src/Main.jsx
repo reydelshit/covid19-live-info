@@ -56,13 +56,11 @@ function Main() {
 
   
   return ( 
-    <div className="App">
       <main className='main__body'>
           <WorldWide />
            <CovidData historicalCases={historicalCases} covidData={data} index={index}/>
            <ContinentsButton changeIndex={changeIndex}/>
       </main>
-  </div>
 
   );
 }

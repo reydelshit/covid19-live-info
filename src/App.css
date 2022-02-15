@@ -13,26 +13,19 @@ h1{
 }
 
 body{
-/* 
-  background-attachment: fixed;
-  background-image: url('./assets/images/covid-bg-3.jpg');
-  background-size: cover;
-  object-fit: fill;
-  background-repeat: no-repeat;
-  overflow-x: hidden; */
 
-  background: #22272e;
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
+  background: #22272e;
 
-  /* source : https://dribbble.com/shots/14557354-Dimensions-of-the-COVID-19-Crisis/attachments/6246363?mode=media */
-  /* source: https://dribbble.com/shots/11163313-Be-Negative */
 }
 
 .App{
-  
-  height: 100%;
+
+  width: 100%;
   display: flex;
+  flex-shrink: unset;
   flex-direction: column;
   align-items: center;
   padding: 1em;
@@ -42,8 +35,7 @@ body{
 .head__title{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-around;  
   text-align: center;
 }
 
@@ -55,6 +47,7 @@ body{
   justify-content: space-around;
   align-items: center;
   display: flex;
+  /* flex-shrink: unset; */
 
 }
 
@@ -63,25 +56,13 @@ body{
 
   .main__body{
     flex-direction: column;
+    justify-content: center;
   }
   .main__body > :nth-child(1){
     order: 1;
   }
 
-  /* .main__body > :nth-child(3){
-    order: 1;
-  } */
-
 }
-
-
-/* .countrySearch .countryName__container{
-  
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  justify-content: center;
-  align-items: center;
-} */
 
 .countrySearch{
   
@@ -117,3 +98,12 @@ body{
   flex-direction: column;
   margin: auto;
 }
+
+@media screen and (max-width: 1172px) {
+
+  .countrySearch{
+  
+    width: 100%;
+  }
+
+}  
