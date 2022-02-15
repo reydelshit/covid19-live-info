@@ -32,6 +32,10 @@
 
 @media screen and (max-width: 1172px) {
 
+    .covid__data__main__container{
+        width: 100%;
+    }
+
     .continent__holder {
         justify-content: center;
         align-items: center;
