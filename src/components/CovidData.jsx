@@ -1,5 +1,5 @@
 import CovidCasesChart from "./CovidCasesChart";
-import '../assets/CovidData.css'
+import "../App.css"
 
 
 const MainData = ({covidData, historicalCases, index}) => {

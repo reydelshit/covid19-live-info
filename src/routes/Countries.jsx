@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 import "../App.css"
-
-import Header from "../components/Header"
 import ListCountry from '../components/ListCountry';
 
-import "../assets/CountrySearch.css"
+import "../App.css"
 
 
 const Countries = () => {
@@ -51,16 +49,18 @@ const Countries = () => {
   }
 
   return (
-    <>
+    <div className='countrySearch__container'>
     <div className='countrySearch'>
+      <h1>Search Country</h1>
+      <p>The Information is from Worldometers, it will only updated for every 10 minutes</p>
       <input style={{color: 'black'}} type="text" onChange={getCountryData}/>
         {country ? <div onClick={dontShow} className='countryName__container'>
         {filterSearch.map((countryName, index) => 
-        <ListCountry countryName={countryName} key={index}/>)}
+          <ListCountry countryName={countryName} key={index}/>)}
         </div> : ''}
     </div>
-    <Outlet/>
-    </>
+      <Outlet/>
+    </div>
   )
 }
 

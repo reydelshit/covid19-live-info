@@ -1,46 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
   color: aqua;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
-h1{
+h1 {
   font-size: 1rem;
 }
 
-body{
-
+body {
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   background: #22272e;
-
 }
 
-.App{
-
+.App {
   width: 100%;
   display: flex;
   flex-shrink: unset;
   flex-direction: column;
   align-items: center;
   padding: 1em;
-
 }
 
-.head__title{
+.head__title {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;  
+  justify-content: space-around;
   text-align: center;
 }
 
-
-.main__body{
+.main__body {
   /* border: 1px solid yellow; */
   margin-top: 3rem;
   width: 100%;
@@ -48,62 +43,317 @@ body{
   align-items: center;
   display: flex;
   /* flex-shrink: unset; */
-
 }
 
-
 @media screen and (max-width: 1172px) {
-
-  .main__body{
+  .main__body {
     flex-direction: column;
     justify-content: center;
   }
-  .main__body > :nth-child(1){
+  .main__body > :nth-child(1) {
     order: 1;
   }
-
 }
 
-.countrySearch{
+
+@media screen and (max-width: 1172px) {
+  .countrySearch {
+    width: 100%;
+  }
+}
+
+/* header */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header a{
+  text-decoration: none;
+}
+ul {
+  
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+ul li a{
+  text-decoration: none;
+}
+ul li:hover{
+  color: azure;
+}
+
+
+/* =============================================== */
+
+/* search per country container  */
+
+.countrySearch__container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.countrySearch {
+  margin-top: 5rem;
+}
+
+.countrySearch h1{
+  margin-bottom: 1rem;
+}
+
+.countrySearch p{
+  color: white;
+  margin-bottom: 1rem;
+}
+.countrySearch input {
+  display: block;
+  outline: none;
+  height: 3rem;
+  width: 50rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid aqua;
+}
+
+.countryName__container {
   
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   flex-direction: column;
-}
-
-.countrySearch input{
-
-  margin-bottom: 1rem;
-  width: 15rem;
-}
-
-
-.countryName__container{
-
-  display: flex;
-  flex-direction: column;
-  position: inherit;
-
-  width: 15rem;
+  width: 30%;
   background-color: #43474d;
 }
 
-.modal{
+.countryName__container a{
+  text-decoration: none;
+}
 
+.countryName__container a:hover{
+  
+  color: white;
+
+}
+
+.loading__container{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.modal span{
+  display: block;
+}
+
+
+@media screen and (max-width: 1172px) {
+  .countrySearch {
+    width: 100%;
+  }
+
+  .countrySearch input {
+    width: 100%;
+  }
+
+  .countryName__container {
+  
+    width: 100%;
+  }
+}
+
+.information__titles{
+  color: white;
+  display: inline-block;
+}
+
+
+/* ========================================================= */
+
+
+
+/* continents button  */
+
+.button__container{
+  display: flex;
   flex-direction: column;
-  margin: auto;
+  align-items: center;
+}
+
+.button__container button{
+  padding: 0.8em;
+  width: 15rem;
+  background: none;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  background: #393d42;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+/* =============================================================== */
+
+
+/* covid charts container  */
+
+.covid__Chart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.covid__Chart h1{
+  
+  font-size: 2rem;
+}
+
+.chart__Container{
+
+  /* background: #22272e; */
+  margin-left: -1rem;
+  padding: 1em;
+  width: 50rem;
+
 }
 
 @media screen and (max-width: 1172px) {
 
-  .countrySearch{
-  
-    width: 100%;
+  .chart__Container{
+      margin: 2rem;
+      /* width: 100vw; */
+  }
+}
+
+@media screen and (max-width: 830px) {
+
+  .chart__Container{
+      order: 2;
+      width: 100vw;
+  }
+}
+
+
+
+/* ================================================================ */
+
+
+/* covid data cases  */
+.covid__data__main__container{
+  width: 50rem;
+}
+
+.covidData__main__container{
+  display: flex;
+  flex-direction: column;
+  padding: 0.3em;
+}
+
+.continent__name h1{
+  font-size: 2rem;
+  padding-bottom: 1em;
+}
+
+.continent__holder {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.covidData__container{
+  width: 15rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #393d42;
+}
+
+.covidData__container span{
+  display: block;
+}
+
+@media screen and (max-width: 1172px) {
+
+  .covid__data__main__container{
+      width: 100%;
   }
 
-}  
+  .continent__holder {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .covidData__container{
+      margin-bottom: 1rem;
+  }
+
+  .covidchart{
+      order: 0;
+  }
+  .covid__data__main__container{
+      display: flex;
+      flex-direction: column-reverse;
+
+  }
+  
+
+}
+
+/* ================================================= */
+
+
+/* country search  */
+
+.countrySearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.countrySearch a{
+  display: inline-block;
+}
+
+/* =========================================================== */
+
+
+/* worldwide css  */
+
+.worldwide__main__container h1{
+  font-size: 2rem;
+  padding-bottom: 1em;
+}
+
+.worldwide__container{
+
+  width: 15rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #393d42;
+  margin-bottom: 1rem;
+}
+
+.worldwide__container span{
+  display: block;
+}
+
+/* =========================================================== */
+
+
+/* github icon  */
+
+.github__icon i {
+  font-size: 2rem;
+  cursor: pointer;
+}

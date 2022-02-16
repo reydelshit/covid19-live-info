@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import "../assets/CovidChart.css"
-
+import "../App.css"
+import { Link } from 'react-router-dom';
 
 import { Line } from 'react-chartjs-2'
 import {
@@ -96,6 +96,8 @@ const CovidCasesChart = ({historicalCases}) => {
         <div className='chart__Container'>
             <Line className='bg' options={options} data={data} />
         </div>
+        <span>search data per <Link to="/countries">country</Link></span>
+
     </div>
   )
 }

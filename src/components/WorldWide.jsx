@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../assets/Worldwide.css'
+import "../App.css"
 
 const WorldWide = () => {
 

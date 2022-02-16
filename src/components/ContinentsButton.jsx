@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/ContinentsButton.css'
+import "../App.css"
 
 const ContinentsButton = ({changeIndex}) => {
   return (

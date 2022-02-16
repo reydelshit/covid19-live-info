@@ -9,7 +9,7 @@ import { render } from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Countries from "./routes/Countries"
-import Dummy from "./routes/Dummy"
+import CountryResults from "./routes/CountryResults"
 
 import Main from "./Main"
 
@@ -23,7 +23,7 @@ render(
       <Route path="/" element={<App />}>
         <Route path="/" index element={<Main />} />
         <Route path="/countries" element={<Countries />}>
-          <Route path=':country' element={<Dummy />}/>
+          <Route path=':country' element={<CountryResults />}/>
         </Route>
       </Route>
     </Routes>

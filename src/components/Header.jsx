@@ -1,19 +1,20 @@
 import React from 'react';
-import '../assets/Header.css'
+
+import "../App.css"
 
 import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header>
-       <Link to="/">homee</Link>  
+       <Link to="/">Homee</Link>  
       <ul>
           <li>
-            <Link to="/countries">country</Link>
+            <Link to="/countries">Country Data</Link>
           </li>
       </ul>
-        <div>
-          <h1>dark</h1>
+        <div className='github__icon'>
+            <a href="https://github.com/reydelshit/covid19-live-info"><i class="fa-brands fa-github"></i></a>
         </div>
         
     </header>
